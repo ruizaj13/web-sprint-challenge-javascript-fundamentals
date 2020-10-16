@@ -17,8 +17,26 @@ function myFunction() {
 myFunction();
 
 // Explanation: 
-
+ 
+    /* nestedfunction() can access it because they are both within the same function /*
 
 /* Task 2: Counter */
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+
+function summation(number){
+
+  let numberTotal = 0;
+
+  function counter(){
+    for (let i=0; i <= number; i++){
+
+      numberTotal += i;
+
+    }
+  }
+    counter();
+    return numberTotal;
+}
+
+console.log(summation(4))
